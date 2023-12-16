@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>
+        <a id="title" href="#"><h1>ATD Decorators</h1></a>
+      </header>
+      <ul>
+        <li class="navlist"><a class="nav-link" href="#about">About</a></li>
+        <li class="navlist">
+          <a class="nav-link" href="#decorating_services"
+            >Decorating Services</a
+          >
+        </li>
+        <li class="navlist">
+          <a class="nav-link" href="#renovations">Renovations</a>
+        </li>
+        <li class="navlist">
+          <a class="nav-link" href="#recent_work">Recent Work</a>
+        </li>
+        <li class="navlist">
+          <a class="nav-link" href="#contact_us">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main id="main-doc">
+      <section class="main-section" id="about">
+        <header><h2>About</h2></header>
+        <p>
+          Whether you need a fresh coat of paint to spruce up your existing home
+          or colour advice to shape your new one. Attention to Detail Decorators
+          are here for all of your interior & exterior painting needs.
+        </p>
+
+        <p>
+          Our founder Corey Daken has been working in the industry for over 10
+          years bringing a range of experience with him. His work has involved
+          collaboarting with architects, interior designers, construction
+          companies and home owners to meet the results that his clients desire.
+        </p>
+
+        <p>The ATD team work all across the Wellington region.</p>
+      </section>
+      <section class="main-section" id="decorating_services">
+        <header><h2>Decorating Services</h2></header>
+        <p>
+          Whether you need a fresh coat of paint to spruce up your existing home
+          or colour advice to shape your new one.
+        </p>
+
+        <p>
+          Attention to Detail Decorators are here for all of your interior &
+          exterior painting needs.
+        </p>
+
+        <ul>
+          <li>Pristine prep work</li>
+          <li>Painting</li>
+          <li>Lovely people</li>
+          <li>Great chat</li>
+          <li>
+            Goes the extra mile to get the job done effectively & efficiently
+          </li>
+        </ul>
+      </section>
+      <section class="main-section" id="renovations">
+        <header><h2>Renovations</h2></header>
+        <p>
+          We are experienced in working with clients across all stages of home
+          renovation.
+        </p>
+      </section>
+      <section class="main-section" id="recent_work">
+        <header><h2>Recent Work</h2></header>
+        <p>Check out our most recent work in the gallery below.</p>
+
+        <div id="gallery">
+          <img src="images/ATD1.jpeg" alt="" height="550" width="550" />
+          <img src="images/ATD2.jpg" alt="" height="550" width="550" />
+          <img src="images/ATD3.jpg" alt="" height="550" width="550" />
+          <img src="images/ATD4.jpg" alt="" height="550" width="550" />
+          <img src="images/ATD5.jpeg" alt="" height="550" width="550" />
+          <img src="images/ATD6.jpeg" alt="" height="550" width="550" />
+        </div>
+
+        <p>If you see something you desire, we can make it happen.</p>
+      </section>
+      <section class="main-section" id="contact_us">
+        <header><h2>Contact Us</h2></header>
+        <p>Contact us for a free, no obligation quote.</p>
+        <p>
+          Leave us a brief message with some contact details, and we'll be in
+          touch.
+        </p>
+
+        <form id="contact" method="post">
+          <fieldset>
+            <label id="name-label" for="name">
+              <input
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Enter your name"
+                required
+            /></label>
+
+            <label id="email-label" for="email">
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="Enter your Email"
+                required
+            /></label>
+
+            <label id="comments" for="comments">
+              <textarea
+                id="comment"
+                name="comments"
+                rows="3"
+                cols="30"
+                placeholder="Enter your message here..."
+              ></textarea>
+            </label>
+            <input id="submit" type="submit" value="Submit" />
+          </fieldset>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
+
+<!-- You can see a main element with a corresponding id="main-doc", which contains the page's main content (technical documentation)    DONE 02/05/23
+
+Within the #main-doc element, you can see several section elements, each with a class of main-section. There should be a minimum of five    DONE 02/05/23
+
+The first element within each .main-section should be a header element, which contains text that describes the topic of that section.   DONE 02/05/23    
+
+Each section element with the class of main-section should also have an id that corresponds with the text of each header contained within it. Any spaces should be replaced with underscores (e.g. The section that contains the header "JavaScript and Java" should have a corresponding id="JavaScript_and_Java")     DONE 02/05/23 
+
+The .main-section elements should contain at least ten p elements total (not each)      DONE 02/05/23 
+
+The .main-section elements should contain at least five code elements total (not each)    DONE 03/05/23 <code>Haven't put this in - however; this changes the text if wrapped in this tag</code>
+
+The .main-section elements should contain at least five li items total (not each)   DONE 03/05/23
+
+You can see a nav element with a corresponding id="navbar"    DONE 03/05/23
+
+The navbar element should contain one header element which contains text that describes the topic of the technical documentation    DONE 03/05/23 
+
+Additionally, the navbar should contain link (a) elements with the class of nav-link. There should be one for every element with the class main-section   DONE 03/05/23
+
+The header element in the #navbar must come before any link (a) elements in the navbar    DONE 03/05/23
+
+Each element with the class of nav-link should contain text that corresponds to the header text within each section (e.g. if you have a "Hello world" section/header, your navbar should have an element which contains the text "Hello world")   DONE 03/05/23
+
+When you click on a navbar element, the page should navigate to the corresponding section of the #main-doc element (e.g. If you click on a .nav-link element that contains the text "Hello world", the page navigates to a section element with that id, and contains the corresponding header)   DONE 03/05/23
+
+On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user    DONE 03/05/23
+
+Your technical documentation should use at least one media query    DONE 04/05/23 -->
